@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+@font-face{
+    font-family: 'AvenirNextBold' ;
+    src: url('fonts/AvenirNextLTPro-Bold.otf'); 
+}
+@font-face{
+    font-family: 'AvenirNextMedium';
+    src: url('fonts/AvenirNextMedium.otf');
+}
+@font-face{
+    font-family: 'AvenirNextItalics';
+    src: url('fonts/AvenirNextLTPro-It.otf');
+}
+@font-face{
+    font-family: 'AvenirNextDemi';
+    src: url('fonts/AvenirNextLTPro-Demi.otf');
+}
+@font-face {
+    font-family: "Avenir Next Ultra Light"; 
+    src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot"); 
+    src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff") format("woff"), url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.svg#Avenir Next Ultra Light") format("svg"); 
+}
+
+.squeaky-bold{
+    font-family: 'AvenirNextBold';
+    font-size: 64px;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+.landing-text{
+    margin-top: 120px;
+    margin-left: 55px;
+}
+.squeaky-sub{
+    font-family: 'AvenirNextMedium';
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.squote{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    background: #4eadff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    font-family: 'AvenirNextMedium';
+}
+.squote:hover{
+    background: #3d9cee;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.request-service{
+    border: none;
+    background: #4eadff;
+    width: 200px;
+    height: 45px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'AvenirNextMedium';
+    margin-top: 60px;
+
+}
+.request-service:hover{
+    background: #3d9cee;
+}
+.choose-btn:hover{
+    background: #4eadff;
+    color: white;
+}
+
+.landing-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+nav{
+    font-family: 'AvenirNextMedium';
+    font-size: 20px;
+    
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before{
+    transition: all .5s;
+}
+nav ul li a:hover{
+   color: red;
+}
+nav.stroke ul li a{
+    position: relative;
+}
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.stats{
+    margin-top: 450px;
+}
+.stats img{
+    margin-left: 0px;
+}
+.request-div{
+    width: 100%;
+    height: auto;
+    background: rgba(223, 226, 235, .5);
+    display: flex;
+    
+}
+.request-div img{
+    z-index: -1;
+    width: 100%;
+}
+.request-text{
+    font-family: 'AvenirNextBold';
+    font-size: 36px;
+}
+.wash-section{
+    width: 100%;
+    margin-top: 110px;
+    justify-content: flex-end;
+}
+.request-box{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20%;
+    padding: 50px;
+    font-family: 'AvenirNextMedium';
+    margin-top: 30px;
+    background: #ffffff;
+}
+.box-text{
+    font-family: 'AvenirNextMedium';
+    font-size: 24px;
+    line-height: 37px;
+    text-align: left;
+    justify-content: left;
+}
+.enter-phone{
+    background: #E2E7E9;
+    margin-right: 15px;
+}
+.enter-phone:hover{
+    background:#d1d6d8 ;
+}
+.enter-phone:active{
+    background: #c0c5c7;
+}
+.package-name{
+    font-family: 'AvenirNextBold';
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    
+}
+.package-text{
+    font-family: 'AvenirNextMedium';
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    justify-content: left;
+    line-height: 22px;
+    
+}
+.long, .from{
+    margin-bottom: 40px;
+}
+
+strong{
+    font-family: 'AvenirNextBold';
+    font-size: 30px;
+    line-height: 23px;
+    text-align: left;
+    align-items: top;
+
+}
+.price-head{
+    font-family: 'AvenirNextDemi';
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+    align-items: top;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.our-prices{
+    margin-top: 100px;
+
+}
+.packages{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+.head{
+    display: flex;
+}
+.package{
+    
+    margin-right: 40px;
+    width: 330px;
+    padding: 30px;
+    height: 547px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, .1) ;
+}
+.vip{
+    box-shadow: 0px 0px 27px 0px rgba(78, 173, 255, .4) ;
+}
+.reviews{
+    margin-top: 70px;
+}
+.choose-btn{
+    width: 232px;
+    height: 50px;
+    background: #ffffff;
+    color: #4eadff;
+    border-radius: 8px;
+    border: 1px solid #4eadff;
+    margin: 40px auto auto 15px ;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'AvenirNextMedium'
+}
+.main{
+    background: #4eadff;
+    color: #ffffff;
+}
+.main:hover{
+    background: white;
+    border: 1px solid #4eadff;
+    color: #4eadff;
+}
+.details{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.employee-name{
+    font-family: 'AvenirNextDemi';
+    font-size: 20px;
+    line-height: auto;
+    text-align: center;
+    align-items: top;
+    margin: 5px auto;
+}
+.employee-description{
+    font-family: 'AvenirNextDemi';
+    font-size: 20px;
+    width: 310px;
+    height: 82px;
+    text-align: center;
+    margin: 5px auto;
+
+}
+.employee-title{
+    font-family: "Avenir Next Ultra Light";
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.review-pictures{
+    display: flex;
+}
+.info{
+    margin-top: 70px;
+}
+
+.founder, .cod{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    margin: 40px 0px;
+}
+.ctrl{
+    display: flex;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.back{
+    margin-right: 30px;
+}
+.back img{
+    cursor: pointer;
+}
+nav ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    column-gap: 25px;
+   
+}
+
+.nav-link{
+    margin-top: 20px;
+}
+.last-div{
+    width: 60%;
+    height: auto;
+    background: #4eadff;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 60px;
+
+}
+.last-div p{
+    font-family: 'AvenirNextDemi';
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.last-div button{
+    width: 232px;
+    height: 50px;
+    border-radius: 3px;
+    background: #ffffff;
+    font-size: 16px;
+    line-height: auto;
+    text-align: center;
+    align-items: top;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-family: 'AvenirNextMedium'
+}
+.location{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+}
+.our-location{
+    width: 100%;
+    background: #ffffff;
+    box-shadow:  0px 0px 17px 0px rgba(0, 0, 0, .1)  ;
+    padding: 8%;
+}
+#map{
+    width: 100%;
+    display: block;
+    height: 550px;
+    background: grey;
+}
+.location-head{
+    font-family: 'AvenirNextDemi';
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.p{
+    font-family: 'AvenirNextMedium';
+    font-size: 24px;
+    align-items: bottom;
+}
+.lagos{
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+.lagos img{
+    margin-right: 15px;
+}
+.number{
+    margin-bottom: 40px;
+}
+.socials{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-socials{
+    margin-bottom: 20px;
+}
+.infoss{
+    display: flex;
+    padding-top: 15%;
+    padding-left: 20%;
+    
+}
+.infos img{
+    z-index: -1;
+    position: absolute;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.squeaky-blog, .infoss{
+    width: 100%;
+
+}
+.infos{
+    width: 100%;
+}
+
+.blog-head{
+    font-family: 'AvenirNextDemi';
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.squeaky-blog{
+    justify-content: flex-end;
+    padding-top: 7.5%;
+    margin-left: 223px;
+    background: #4eadff;
+    padding-left: 100px;
+    height: 570px;
+}
+.email-us{
+    font-family: 'AvenirNextMedium';
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.email-us a{
+    text-decoration: none;
+    color: #ffffff ;
+}
+.squeaky-blog button{
+    font-family: 'AvenirNextMedium';
+    width: 128px;
+    height: 50px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+}
+.company a{
+    text-decoration: none;
+    font-family: "Avenir Next Ultra Light";
+    color: #000000;
+    padding-right: 140px;
+}
+.company{
+    line-height: 30px;
+}
+.head{
+    font-family: 'AvenirNextDemi';
+}
+footer{
+    font-family: "Avenir Next Ultra Light";
+    text-align: center;
+}
